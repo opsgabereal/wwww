@@ -52,10 +52,7 @@
     } else {
         items = JSON.parse(items)
     }
-    localStorage.setItem('infinite-craft-data', JSON.stringify(items))
-    let thanks = {"text":"Thank you for using Pytems","emoji":"🍉","discovered":false}
-    if (!items.elements.some(e => e.text === thanks.text)) {
-        items.elements.unshift(thanks)
+   
  
     }
     localStorage.setItem('infinite-craft-data', JSON.stringify(items))
