@@ -18,7 +18,7 @@
         if (compareVersions(version, latestVersion) === -1) {
             let items = document.querySelectorAll('.item');
             items.forEach(item => {
-                if (item.textContent.includes('Thank you for using Pytems')) {
+                if (item.textContent.includes(' ')) {
                     item.innerHTML = `<span data-v-adfd717a="" class="item-emoji">❗</span> Pytems Update Available (v${latestVersion})`;
                     document.getElementById('pytems-update').style.display = 'flex';
                     console.log('%cYour Pytems is not up to date, get the latest update from: %chttps://greasyfork.org/en/scripts/487439-pytems', 'color: red; font-weight: bold;', 'color: blue; text-decoration: underline;');
